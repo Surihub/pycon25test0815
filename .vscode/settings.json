@@ -1,0 +1,9 @@
+// .vscode/settings.json  (워크스페이스 전체에 적용)
+{
+  "editor.wordWrap": "on",              // 모든 파일 줄바꿈
+  "editor.wordWrapColumn": 100,         // 기준 열 (on이면 참고용, bounded면 강제)
+  "editor.wrappingIndent": "indent",    // 줄바꿈된 줄 들여쓰기
+  "diffEditor.wordWrap": "on",          // Diff 보기에서도 줄바꿈
+  "[markdown]": { "editor.wordWrap": "on" },     // 언어별 오버라이드 예시
+  "[plaintext]": { "editor.wordWrap": "on" }
+}
