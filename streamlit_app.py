@@ -3,10 +3,127 @@ import streamlit as st
 st.title("💡숩숩이의 파이콘 튜토리얼")
 st.info("안녕하세요, 숩숩이의 파이콘 튜토리얼 예제 앱입니다. ")
 st.subheader("첫 번째 앱")
-st.image("data:image/jpeg;base64,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", caption="귀여운 고양이", use_container_width=True)
 
-st.code("""
+# import pandas as pd
+
+# st.title("1️⃣ ✅ 공개 Google Sheet 읽기")
+# st.info("📘 누구나 볼 수 있도록 공개된 시트를 Pandas로 직접 불러오는 가장 간단한 방법입니다.\n📎 링크는 반드시 `export?format=csv` 형태로 설정하세요.")
+
+# csv_url1 = "https://docs.google.com/spreadsheets/d/1rrpjBRWs156UFcT7z9OqO6nSUTCyIsvAt4HWjTOICSM/export?format=csv"
+# df1 = pd.read_csv(csv_url1)
+# st.dataframe(df1[['question_id', 'nickname']])
+
+
+# import streamlit as st
+# import pandas as pd
+
+# st.title("2️⃣ 🔐 공개 Google Sheet 읽기")
+# st.info("📘 Sheet는 여전히 공개 상태입니다. URL만 안전하게 숨기기 위해 `secrets.toml`에 저장합니다.")
+
+
+# csv_url2 =  st.secrets["gs"]
+
+# df2 = pd.read_csv(csv_url2)
+
+# # 📄 시트 전체 미리보기
+# # st.dataframe(df2, use_container_width=True)
+
+# # 🔍 활성화된 질문 필터링
+# active_rows = df2[df2["is_active"] == True]
+
+# if active_rows.empty:
+#     st.warning("⚠️ 현재 활성화된 질문이 없습니다.")
+# else:
+#     for i, row in active_rows.iterrows():
+#         st.divider()
+#         st.subheader(f"📌 질문: {row['question_text']}")
+        
+#         # 선택지 opt_a, opt_b, opt_c, ... 자동 추출
+#         options = [row[col] for col in df2.columns if col.startswith("opt_") and pd.notna(row[col])]
+        
+#         # 사용자 응답 입력
+#         selected = st.radio(
+#             f"답을 골라주세요 (질문 ID: {row['question_id']})",
+#             options,
+#             key=f"question_{i}"
+#         )
+
+#         # ✅ 정답 확인
+#         correct = row["answer"]
+#         if selected:
+#             if selected == correct:
+#                 st.success("✅ 정답입니다!")
+#             else:
+#                 st.error(f"❌ 오답입니다. 정답은 **{correct}** 입니다.")
+
+
+
 import streamlit as st
-st.title('Hello World')
-""", language="python")
+import gspread
+import pandas as pd
+from google.oauth2.service_account import Credentials
 
+# 앱 제목 출력
+st.title("3️⃣ 🔒 비공개 Google Sheet 연결")
+
+# 서비스 계정 설정 안내
+st.info(
+    "🔐 시트에 ‘공개 설정 없이’ 안전하게 접근하려면 서비스 계정을 사용해야 합니다.\n"
+    "📎 서비스 계정 이메일을 시트에 ‘뷰어’ 또는 ‘편집자’로 공유하세요."
+)
+
+# Google API 접근 범위(SCOPES) 설정
+SCOPES = [
+    "https://www.googleapis.com/auth/spreadsheets",  # 구글 스프레드시트 읽기/쓰기
+    "https://www.googleapis.com/auth/drive"          # 구글 드라이브 접근
+]
+
+# secrets.toml에 저장된 서비스 계정 정보로 인증 객체 생성
+credentials = Credentials.from_service_account_info(
+    st.secrets["google_service_account"],  # 서비스 계정 JSON 데이터
+    scopes=SCOPES
+)
+
+# gspread를 이용해 구글 시트 API 인증
+gc = gspread.authorize(credentials)
+
+# secrets.toml에 저장된 시트 키로 구글 시트 열기
+spreadsheet = gc.open_by_key(st.secrets["gsheet_key"])
+
+# "datainput" 워크시트 선택
+sheet_input = spreadsheet.worksheet("시트1")
+
+# 데이터 추가 함수 정의
+def append_input_data(name, feedback):
+    """
+    Google Sheet의 'datainput' 워크시트에 한 행(name, feedback) 추가
+    """
+    sheet_input.append_row([name, feedback])
+
+# 입력 폼 생성
+with st.form("input_form"):
+    name = st.text_input("이름")            # 이름 입력
+    feedback = st.text_area("피드백")       # 피드백 입력
+    submitted = st.form_submit_button("제출")
+
+    if submitted:
+        # 이름과 피드백이 모두 입력된 경우
+        if name and feedback:
+            append_input_data(name, feedback)     # 시트에 데이터 저장
+            st.success("✅ 저장 완료")             # 성공 메시지
+        else:
+            st.warning("⚠️ 모든 필드를 입력해 주세요.")  # 경고 메시지
+
+# 구분선
+st.markdown("---")
+st.subheader("📊 지금까지 제출된 데이터")
+
+# Google Sheet의 모든 데이터 읽어서 DataFrame 변환
+df = pd.DataFrame(sheet_input.get_all_records())
+
+# 새로고침 버튼 클릭 시 캐시 삭제 → 최신 데이터 반영
+if st.button("새로고침 🔄"):
+    st.cache_data.clear()
+
+# 피드백 컬럼 데이터 화면에 표시
+st.write(df['피드백'])
